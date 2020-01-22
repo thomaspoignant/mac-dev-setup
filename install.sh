@@ -1,15 +1,12 @@
 #!/bin/bash
 
-
-
 readonly INSTALL_PHRASE='Do you want to install'
 readonly BASH_CMD='/bin/bash'
-readonly GITHUB_URL'https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/dev'
+readonly GITHUB_URL='https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/dev'
 readonly INSTALL_SCRIPTS_URL="$GITHUB_URL/install_scripts/"
 
-source <(curl -fsSL "$GITHUB_URL/install_list.sh")
-
-
+# Import list of available apps.
+source /dev/stdin <<<"$(curl -fsSL "$GITHUB_URL/install_list.sh")"
 
 function yesNoQuestion() {
   while true; do
@@ -63,7 +60,7 @@ done
 echo "We will install all this components:"
 for i in "${installList[@]}"; do
   title=$(printf "title_%s" "$i")
-  printf "\e[1m\e[31m  - %s\e[m\n" "${!title}";
+  printf "\e[1m\e[31m  - %s\e[m\n" "${!title}"
 done
 
 if yesNoQuestion "Starting the installation? (yes or no) "; then
