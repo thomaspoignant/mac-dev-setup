@@ -4,7 +4,7 @@ An easy script to install your mac environnement
 # TL;TR
 
 Run
-```shell
-/bin/bash https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/master/install.sh
+```sh
+/bin/bash <(curl -fsSL "https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/master/install.sh")
 ```
 And answer the questions.
