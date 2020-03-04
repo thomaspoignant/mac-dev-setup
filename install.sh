@@ -1,5 +1,4 @@
 #!/bin/bash
-
 readonly INSTALL_PHRASE='Do you want to install'
 readonly BASH_CMD='/bin/bash'
 readonly GITHUB_URL='https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/dev'
@@ -8,24 +7,18 @@ readonly INSTALL_SCRIPTS_URL="$GITHUB_URL/install_scripts/"
 # Import list of available apps.
 #source /dev/stdin <<<"$(curl -fsSL "$GITHUB_URL/install_list.sh")"
 source ./install_list.sh
-
-function yesNoQuestion() {
-  while true; do
-    read -p "$1" yn
-    case $yn in
-    [Yy]*) return 0 ;;
-    [Nn]*) return 1 ;;
-    [Qq]*) exit ;;
-    *) printf "Please answer yes or no." ;;
-    esac
-  done
-}
+source ./util.sh
 
 function echoG() {
   printf "\e[0;32m%s\e[m\n" "$1"
 }
 function lineBreak() {
   printf "\n"
+}
+
+function loadFile() {
+  #  $BASH_CMD <(curl -fsSL "$INSTALL_SCRIPTS_URL"/$1)
+  $BASH_CMD install_scripts/$1
 }
 
 printf "\e[0;32m"
@@ -81,12 +74,12 @@ if yesNoQuestion "Starting the installation? (yes or no) "; then
   lineBreak
 
   #$BASH_CMD <(curl -fsSL "$INSTALL_SCRIPTS_URL"/prerequisites.sh)
-  $BASH_CMD install_scripts/prerequisites.sh
+  loadFile 'prerequisites.sh'
   # Install what is need by the user
   for i in "${installList[@]}"; do
     title=$(printf "title_%s" "$i")
     echoG "Installing ${!title}"
-    $BASH_CMD install_scripts/"$i".sh
+    loadFile "$i".sh
     #$BASH_CMD <(curl -fsSL "$INSTALL_SCRIPTS_URL"/"$i".sh)
     lineBreak
   done
