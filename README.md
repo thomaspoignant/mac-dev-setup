@@ -7,5 +7,68 @@ This script allow you to install all the tools you need for setting up your dev 
 
 ## Launch installation
 ```shell
-curl  | bash
+curl https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/master/mac-dev-setup.sh | bash
 ```
+
+## What does it install?
+
+It will install all this tools:
+- ### brew
+  The Missing Package Manager for macOS, Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.
+- ### iterm2
+  iTerm2 is a replacement for Terminal (https://www.iterm2.com/).
+- ### zsh / oh-my-zsh
+  A delightful community-driven (with 1500+ contributors) framework for managing your zsh configuration. Includes 200+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community. https://ohmyz.sh/
+- ### Most used command line tools.
+  - **curl** : command line tool and library for transferring data with URLs.
+  - **wget** : software package for retrieving files using HTTP, HTTPS, FTP and FTPS.
+  - **micro** : A modern and intuitive terminal-based text editor.
+  - **lsd** : The next gen ls command.
+  - **tree** : The tree command allows the user to view an easy-to-read list of files and folders.
+  - **ack** : Ack is designed as a replacement for 99% of the uses of grep.
+  - **jq** : jq is a lightweight and flexible command-line JSON processor.
+  - **bash-completion** : Programmable completion functions for bash.
+- ### GIT
+  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+  #### git-alias
+    Some great aliases to make your life easier when using GIT command line (https://github.com/thomaspoignant/gitalias).
+  #### git-secrets
+    Prevents you from committing secrets and credentials into git repositories (https://github.com/awslabs/git-secrets).
+- ### Web browsers
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
+- ### Productivity tools
+  - **slack**: The Collaboration Hub.
+  - **whatsapp**: Messaging system.
+  - **rectangle**: Move and resize windows in macOS using keyboard shortcuts or snap areas.
+  - **KAP**:  This is the best screen capture app right now.
+  - **evernote**: Note taking app.
+  - **spotify**: Music streaming.
+  - **VLC**: Free and open source cross-platform multimedia player that plays most multimedia files, and various streaming protocols.
+- ### IDE
+  #### intellij idea
+    Best IDEA for java and also the rest (https://www.jetbrains.com/idea/).
+  #### vsCode
+    A great text editor who can be an IDE sometimes (https://code.visualstudio.com/).
+- ### Development
+  #### Languages
+  - **Java**
+  - **golang**
+  - **python**
+  - **terraform**
+  - **node**
+  #### Database tools
+  - **Dbeaver**: DB browser.
+  - **libpq**: Postgres client command line.
+  #### FTP/SFTP
+  - **cyberduck**
+  #### Docker
+  - **docker**
+  - **docker command line completion**
+  #### AWS
+  - **awscli**: official aws command line
+  - **saws**: A supercharged AWS command line interface.
+  #### API
+  - **ngrok**: Expose your local APIs online.
+  - **postman**: Call your APIs.
