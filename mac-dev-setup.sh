@@ -30,6 +30,14 @@ git config --global init.templateDir ~/.git-templates/git-secrets
 
 # ZSH
 brew install zsh zsh-completions                                                                      # Install zsh and zsh completions
+{
+  echo "if type brew &>/dev/null; then"
+  echo "  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH"
+  echo "  autoload -Uz compinit"
+  echo "  compinit"
+  echo "fi"
+} >>$MAC_SETUP_PROFILE
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"# Install oh-my-zsh on top of zsh to getting additional functionality
 # Terminal replacement https://www.iterm2.com
 brew cask install iterm2
