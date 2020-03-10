@@ -50,6 +50,7 @@ brew install bash-completion
 brew install jq
 
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
+brew tap homebrew/cask-fonts
 brew cask install font-jetbrains-mono-powerline
 brew cask install font-jetbrains-mono
 
