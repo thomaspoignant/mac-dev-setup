@@ -32,7 +32,7 @@ git config --global init.templateDir ~/.git-templates/git-secrets
 brew install zsh zsh-completions                                                                      # Install zsh and zsh completions
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"# Install oh-my-zsh on top of zsh to getting additional functionality
 # Terminal replacement https://www.iterm2.com
-brew cask install iterm
+brew cask install iterm2
 # Pimp command lin
 brew install micro                                                                                    # replacement for nano/vi
 brew install lsd                                                                                      # replacement for ls
