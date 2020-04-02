@@ -57,6 +57,7 @@ brew install ack
 brew install bash-completion
 brew install jq
 brew intsall htop
+brew install tldr
 
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
 brew tap homebrew/cask-fonts

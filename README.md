@@ -29,6 +29,7 @@ It will install all this tools:
   - **jq** : jq is a lightweight and flexible command-line JSON processor.
   - **bash-completion** : Programmable completion functions for bash.
   - **htop** : Similar to top but allows you to scroll vertically and horizontally.
+  - **tldr** : A collection of simplified and community-driven man pages.
 - ### GIT
   Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
   #### git-alias
