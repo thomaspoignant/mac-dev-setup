@@ -28,6 +28,7 @@ It will install all this tools:
   - **ack** : Ack is designed as a replacement for 99% of the uses of grep.
   - **jq** : jq is a lightweight and flexible command-line JSON processor.
   - **bash-completion** : Programmable completion functions for bash.
+  - **htop** : Similar to top but allows you to scroll vertically and horizontally.
 - ### GIT
   Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
   #### git-alias
