@@ -6,8 +6,8 @@ mkdir -p $INSTALL_FOLDER
 MAC_SETUP_PROFILE=$INSTALL_FOLDER/macsetup_profile
 
 # install brew
-hash brew
-if [ "$?" -ne "0" ]; then
+if ! hash brew
+then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
 else
