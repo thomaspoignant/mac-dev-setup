@@ -190,3 +190,7 @@ It will install all this tools:
   - Google Chrome
   - Mozilla Firefox
   - Microsoft Edge
+
+# How can I contribute?
+
+If you want to contribute, please open an issue or a pull request and let's talk about the new feature 😉
