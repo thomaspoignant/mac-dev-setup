@@ -87,7 +87,7 @@ brew cask install ngrok                                                         
 brew cask install postman                                                                             # Postman makes sending API requests simple.
 
 # IDE
-brew cask install intellij-idea-ce
+brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 
 # Language
