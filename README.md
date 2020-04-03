@@ -187,9 +187,9 @@ It will install all this tools:
   Because most of the development projects need some web related tools, you need to have most importants web browser of the market.
 
   Here we install, the 3 main one:
-  - Google Chrome
-  - Mozilla Firefox
-  - Microsoft Edge
+  - [Google Chrome](https://www.google.com/chrome/)
+  - [Mozilla Firefox](https://www.mozilla.org/firefox/)
+  - [Microsoft Edge](https://www.microsoft.com/edge)
 
 # How can I contribute?
 
