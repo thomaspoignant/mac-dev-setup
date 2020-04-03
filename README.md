@@ -8,7 +8,7 @@ This script allow you to install all the tools you need for setting up your dev 
 
 # Launch installation
 ```shell
-curl https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/master/mac-dev-setup.sh | bash
+curl https://raw.githubusercontent.com/thomaspoignant/mac-dev-setup/master/src/mac-dev-setup.sh | bash
 ```
 
 # What does it install?
