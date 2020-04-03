@@ -114,6 +114,7 @@ pip install --user pipenv
 pip install --upgrade setuptools
 pip install --upgrade pip
 brew install pyenv
+# shellcheck disable=SC2016
 echo 'eval "$(pyenv init -)"' >> $MAC_SETUP_PROFILE
 
 
@@ -143,10 +144,12 @@ pip install saws    # A supercharged AWS command line interface (CLI).
 # reload profile files.
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
-}>>~/.zsh_profile
-source ~/.zsh_profile
+}>>"$HOME/.zsh_profile"
+# shellcheck disable=SC1090
+source "$HOME/.zsh_profile"
 
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
 }>>~/.bash_profile
+# shellcheck disable=SC1090
 source ~/.bash_profile
