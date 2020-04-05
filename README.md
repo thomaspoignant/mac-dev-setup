@@ -131,7 +131,8 @@ It will install all this tools:
   The main languages I am working with are Java and Go, but here are some of the main languages you always need, on projects.
 
   - **Java**  
-    Install the last version of the `openJDK` JVM.
+    Install the last version of the `openJDK` JVM.  
+    It also install `maven` and `gradle`.
   - **Go / Golang**  
     Install the last `go` version and set `GOPATH` into your shell profile file.
   - **NodeJS**  
@@ -140,9 +141,6 @@ It will install all this tools:
     Install `python` and `pip` so you are ready to go.
   - **Terraform**  
     Install the last version of `terraform` and you are ready to code your infrastructure.
-
-
-
 
 - ## Productivity tools
   Development is not coding all day, you also have to collaborate with people and to use you mac for different kind of things.
