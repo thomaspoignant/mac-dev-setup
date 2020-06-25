@@ -41,7 +41,7 @@ brew install zsh zsh-completions                                                
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"# Install oh-my-zsh on top of zsh to getting additional functionality
 # Terminal replacement https://www.iterm2.com
 brew cask install iterm2
-# Pimp command lin
+# Pimp command line
 brew install micro                                                                                    # replacement for nano/vi
 brew install lsd                                                                                      # replacement for ls
 {
@@ -58,6 +58,8 @@ brew install bash-completion
 brew install jq
 brew intsall htop
 brew install tldr
+brew install coreutils
+brew install watch
 
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
 brew tap homebrew/cask-fonts
