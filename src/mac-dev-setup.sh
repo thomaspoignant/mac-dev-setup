@@ -18,6 +18,15 @@ fi
 brew install curl
 brew install wget
 
+{
+  # shellcheck disable=SC2016
+  echo 'export PATH="/usr/local/opt/curl/bin:$PATH"'
+  # shellcheck disable=SC2016
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"'
+  # shellcheck disable=SC2016
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"'
+}>>$MAC_SETUP_PROFILE
+
 # git
 brew install git                                                                                      # https://formulae.brew.sh/formula/git
 # Adding git aliases (https://github.com/thomaspoignant/gitalias)
@@ -100,8 +109,14 @@ brew cask install visual-studio-code
 
 # Language
 ## Node / Javascript
+mkdir ~/.nvm
 brew install nvm                                                                                     # choose your version of npm
 nvm install node                                                                                     # "node" is an alias for the latest version
+{
+  echo "export NVM_DIR=\"$HOME/.nvm\""
+  echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm'
+  echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion'
+}>>$MAC_SETUP_PROFILE
 
 ## Java
 brew cask install java
@@ -136,6 +151,8 @@ terraform -v
 brew cask install dbeaver-community # db viewer
 brew install libpq                  # postgre command line
 brew link --force libpq
+# shellcheck disable=SC2016
+echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> $MAC_SETUP_PROFILE
 
 # SFTP
 brew cask install cyberduck
@@ -149,7 +166,7 @@ brew install docker-machine-completion
 
 # AWS command line
 brew install awscli # Official command line
-pip install saws    # A supercharged AWS command line interface (CLI).
+pip3 install saws    # A supercharged AWS command line interface (CLI).
 
 # reload profile files.
 {
