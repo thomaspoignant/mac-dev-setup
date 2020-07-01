@@ -61,6 +61,12 @@ brew install tldr
 brew install coreutils
 brew install watch
 
+brew install z
+touch ~/.z
+echo '. /usr/local/etc/profile.d/z.sh' >> $MAC_SETUP_PROFILE
+
+
+
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
 brew tap homebrew/cask-fonts
 brew cask install font-jetbrains-mono-powerline
