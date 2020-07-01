@@ -41,6 +41,16 @@ It will install all this tools:
   - ### [bash-completion](https://github.com/scop/bash-completion)
     Programmable completion functions for bash.
 
+  - ### [ctop](https://github.com/bcicen/ctop)
+    Top-like interface for container metrics
+
+    `ctop` provides a concise and condensed overview of real-time metrics for multiple containers:
+    <p align="center"><img src="https://raw.githubusercontent.com/bcicen/ctop/master/_docs/img/grid.gif" alt="ctop"/></p>
+
+    as well as an [single container view][single_view] for inspecting a specific container.
+
+    `ctop` comes with built-in support for Docker and runC; connectors for other container and cluster systems are planned for future releases.
+
   - ### [curl](https://linux.die.net/man/1/curl)
     Command line tool and library for transferring data with URLs.
 
