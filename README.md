@@ -75,6 +75,15 @@ It will install all this tools:
 
   - ### [wget](https://www.gnu.org/software/wget/)
     Software package for retrieving files using HTTP, HTTPS, FTP and FTPS.
+    
+  - ### [z](https://github.com/rupa/z)
+      Tracks your most used directories, based on 'frecency'.
+      
+      After  a  short  learning  phase, z will take you to the most 'frecent' directory that matches ALL of the regexes
+      given on the command line, in order.
+      
+      For example, z foo bar would match /foo/bar but not /bar/foo.
+
 
 - ## GIT
   Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
