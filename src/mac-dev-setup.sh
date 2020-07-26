@@ -39,6 +39,8 @@ git config --global init.templateDir ~/.git-templates/git-secrets
 
 # ZSH
 brew install zsh zsh-completions                                                                      # Install zsh and zsh completions
+sudo chmod -R 755 /usr/local/share/zsh
+sudo chown -R root:staff /usr/local/share/zsh
 {
   echo "if type brew &>/dev/null; then"
   echo "  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH"
