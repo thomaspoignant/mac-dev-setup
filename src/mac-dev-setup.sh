@@ -65,7 +65,7 @@ brew install tree
 brew install ack
 brew install bash-completion
 brew install jq
-brew intsall htop
+brew install htop
 brew install tldr
 brew install coreutils
 brew install watch
