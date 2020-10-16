@@ -147,7 +147,7 @@ It will install all this tools:
     - docker command line completion
 
   ### Languages
-  The main languages I am working with are Java and Go, but here are some of the main languages you always need, on projects.
+  The main languages I am working with are Java and Go, but here are the main languages you always need, on projects.
 
   - **Java**  
     Install the last version of the `openJDK` JVM.  
@@ -155,7 +155,7 @@ It will install all this tools:
   - **Go / Golang**  
     Install the last `go` version and set `GOPATH` into your shell profile file.
   - **NodeJS**  
-    Install `nvm` and the last version of `nodejs`.
+    Install `nvm` and the last version of `nodejs` + `yarn` for dependencies management.
   - **Python**  
     Install `python` and `pip` so you are ready to go.
   - **Terraform**  
