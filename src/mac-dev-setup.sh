@@ -51,7 +51,7 @@ sudo chown -R root:staff /usr/local/share/zsh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"# Install oh-my-zsh on top of zsh to getting additional functionality
 # Terminal replacement https://www.iterm2.com
-brew cask install iterm2
+brew install --cask iterm2
 # Pimp command line
 brew install micro                                                                                    # replacement for nano/vi
 brew install lsd                                                                                      # replacement for ls
@@ -80,33 +80,33 @@ brew install ctop
 
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
 brew tap homebrew/cask-fonts
-brew cask install font-jetbrains-mono
+brew install --cask font-jetbrains-mono
 
 # Browser
-brew cask install google-chrome
-brew cask install firefox
-brew cask install microsoft-edge
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask microsoft-edge
 
 # Music / Video
-brew cask install spotify
-brew cask install vlc
+brew install --cask spotify
+brew install --cask vlc
 
 # Productivity
-brew cask install evernote                                                                            # cloud note
-brew cask install kap                                                                                 # video screenshot
-brew cask install rectangle                                                                           # manage windows
+brew install --cask evernote                                                                            # cloud note
+brew install --cask kap                                                                                 # video screenshot
+brew install --cask rectangle                                                                           # manage windows
 
 # Communication
-brew cask install slack
-brew cask install whatsapp
+brew install --cask slack
+brew install --cask whatsapp
 
 # Dev tools
-brew cask install ngrok                                                                               # tunnel localhost over internet.
-brew cask install postman                                                                             # Postman makes sending API requests simple.
+brew install --cask ngrok                                                                               # tunnel localhost over internet.
+brew install --cask postman                                                                             # Postman makes sending API requests simple.
 
 # IDE
-brew cask install jetbrains-toolbox
-brew cask install visual-studio-code
+brew install --cask jetbrains-toolbox
+brew install --cask visual-studio-code
 
 # Language
 ## Node / Javascript
@@ -117,7 +117,7 @@ brew install yarn                                                               
 
 
 ## Java
-brew cask install java
+brew install --cask java
 brew install maven
 brew install gradle
 
@@ -146,17 +146,17 @@ brew install terraform
 terraform -v
 
 # Databases
-brew cask install dbeaver-community # db viewer
+brew install --cask dbeaver-community # db viewer
 brew install libpq                  # postgre command line
 brew link --force libpq
 # shellcheck disable=SC2016
 echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> $MAC_SETUP_PROFILE
 
 # SFTP
-brew cask install cyberduck
+brew install --cask cyberduck
 
 # Docker
-brew cask install docker
+brew install --cask docker
 brew install bash-completion
 brew install docker-completion
 brew install docker-compose-completion
