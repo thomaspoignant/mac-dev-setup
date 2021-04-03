@@ -65,7 +65,7 @@ brew install tree
 brew install ack
 brew install bash-completion
 brew install jq
-brew intsall htop
+brew install htop
 brew install tldr
 brew install coreutils
 brew install watch
@@ -78,13 +78,15 @@ brew install ctop
 
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
 brew tap homebrew/cask-fonts
-brew cask install font-jetbrains-mono-powerline
+# brew cask install font-jetbrains-mono-powerline
 brew cask install font-jetbrains-mono
+brew cask install font-hack-nerd-font
 
 # Browser
 brew cask install google-chrome
 brew cask install firefox
 brew cask install microsoft-edge
+brew cask install brave-browser
 
 # Music / Video
 brew cask install spotify
@@ -98,6 +100,8 @@ brew cask install rectangle                                                     
 # Communication
 brew cask install slack
 brew cask install whatsapp
+brew cask install telegram
+# brew cask install wechat
 
 # Dev tools
 brew cask install ngrok                                                                               # tunnel localhost over internet.
@@ -144,8 +148,9 @@ echo 'eval "$(pyenv init -)"' >> $MAC_SETUP_PROFILE
 
 
 ## terraform
-brew install terraform
-terraform -v
+brew install tfenv
+tfenv install latest
+tfenv use latest 
 
 # Databases
 brew cask install dbeaver-community # db viewer
@@ -166,17 +171,77 @@ brew install docker-machine-completion
 
 # AWS command line
 brew install awscli # Official command line
-pip3 install saws    # A supercharged AWS command line interface (CLI).
+# pip3 install saws    # A supercharged AWS command line interface (CLI).
 
 # reload profile files.
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
 }>>"$HOME/.zsh_profile"
+
+{
+  echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
+}>>"$HOME/.zshrc"
 # shellcheck disable=SC1090
 source "$HOME/.zsh_profile"
+source "$HOME/.zshrc"
 
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
 }>>~/.bash_profile
 # shellcheck disable=SC1090
 source ~/.bash_profile
+
+## Frontend development
+npm install -g @angular/cli
+
+## Development folder setup
+mkdir -p ~/Documents/development
+
+### For Dotnet
+
+brew cask install dotnet-sdk
+
+### Need to set the visual studio code font to be 
+
+### For the DejaVu, use "DejaVuSansMono Nerd Font"
+###  "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font"
+### Download from https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete.ttf
+
+
+# For github Desktop
+brew cask install --appdir="/Applications" github
+
+
+# Install video conference, webex, microsoft team,zoom
+brew cask install webex-meetings
+brew cask install microsoft-teams 
+brew cask install zoom
+
+## install vmfusion and virtual box
+## Follow from https://gist.github.com/tomysmile/0618f1aa16341706940ed36b423b431c
+brew cask install vmware-fusion
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
+
+
+## For video editing
+brew cask uninstall camtasia
+
+### For AZURE
+brew install azure-cli
+
+## For google drive back up 
+brew cask install google-backup-and-sync
+
+
+## Install android studio for mobile development
+brew cask install android-studio
+
+## Flutter
+git clone https://github.com/flutter/flutter.git -b stable --depth 1
+
+mkdir ~/src 
+mv flutter ~/src
+
+echo 'export PATH="$PATH:${HOME}/src/flutter/bin"' >> $MAC_SETUP_PROFILE
