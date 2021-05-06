@@ -117,7 +117,9 @@ brew install yarn                                                               
 
 
 ## Java
-brew install --cask java
+curl -s "https://get.sdkman.io" | bash                                                               # sdkman is a tool to manage multiple version of java
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java
 brew install maven
 brew install gradle
 
@@ -165,6 +167,11 @@ brew install docker-machine-completion
 # AWS command line
 brew install awscli # Official command line
 pip3 install saws    # A supercharged AWS command line interface (CLI).
+
+# K8S command line
+brew install kubectx
+brew install asdf
+asdf install kubectl latest
 
 # reload profile files.
 {
