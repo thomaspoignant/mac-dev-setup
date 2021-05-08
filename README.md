@@ -165,8 +165,6 @@ It will install all this tools:
   Development is not coding all day, you also have to collaborate with people and to use you mac for different kind of things.
 
   Here are the most common tools I use every day to work.
-  - ### [Evernote](https://evernote.com/)
-    Note taking app.
 
   - ### [KAP](https://getkap.co/)
     This is the best screen capture app right now.
@@ -185,11 +183,7 @@ It will install all this tools:
       Center window: ⌥⌘ C
       Maximize window: ⌥⌘ F
     ```
-
-  - ### [Slack](https://slack.com/)
-    The Collaboration Hub.
-    I am not sure I need to present what is slack.
-
+  
   - ### [Spotify](http://spotify.com/)
     Music streaming.
 
@@ -205,7 +199,6 @@ It will install all this tools:
 
   Here we install, the 3 main one:
   - [Google Chrome](https://www.google.com/chrome/)
-  - [Mozilla Firefox](https://www.mozilla.org/firefox/)
   - [Microsoft Edge](https://www.microsoft.com/edge)
 
 # How can I contribute?

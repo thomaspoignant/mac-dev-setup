@@ -49,7 +49,7 @@ brew install zsh zsh-completions                                                
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"# Install oh-my-zsh on top of zsh to getting additional functionality
 # Terminal replacement https://www.iterm2.com
-brew cask install iterm2
+brew install --cask  iterm2
 # Pimp command line
 brew install micro                                                                                    # replacement for nano/vi
 brew install lsd                                                                                      # replacement for ls
@@ -78,38 +78,32 @@ brew install ctop
 
 # fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
 brew tap homebrew/cask-fonts
-# brew cask install font-jetbrains-mono-powerline
-brew cask install font-jetbrains-mono
-brew cask install font-hack-nerd-font
+brew install  --cask  font-jetbrains-mono
+brew install  --cask  font-hack-nerd-font
 
-# Browser
-brew cask install google-chrome
-brew cask install firefox
-brew cask install microsoft-edge
-brew cask install brave-browser
+## Browser
+#brew cask install google-chrome
+#brew cask install brave-browser
 
 # Music / Video
-brew cask install spotify
-brew cask install vlc
+brew install  --cask  spotify
+brew install  --cask  vlc
 
 # Productivity
-brew cask install evernote                                                                            # cloud note
-brew cask install kap                                                                                 # video screenshot
-brew cask install rectangle                                                                           # manage windows
+brew install  --cask  kap                                                                                 # video screenshot
+brew install  --cask  rectangle                                                                           # manage windows
 
 # Communication
-brew cask install slack
-brew cask install whatsapp
-brew cask install telegram
-# brew cask install wechat
+brew install  --cask  whatsapp
+brew install --cask   telegram
 
 # Dev tools
-brew cask install ngrok                                                                               # tunnel localhost over internet.
-brew cask install postman                                                                             # Postman makes sending API requests simple.
+brew install --cask   ngrok                                                                               # tunnel localhost over internet.
+brew install  --cask  postman                                                                             # Postman makes sending API requests simple.
 
 # IDE
-brew cask install jetbrains-toolbox
-brew cask install visual-studio-code
+#brew install --cask  jetbrains-toolbox
+brew install --cask  visual-studio-code
 
 # Language
 ## Node / Javascript
@@ -123,8 +117,8 @@ nvm install node                                                                
 }>>$MAC_SETUP_PROFILE
 
 ## Java
-brew cask install java
-brew install maven
+brew --cask install java
+#brew install maven # do not want to use maven
 brew install gradle
 
 ## golang
@@ -153,17 +147,17 @@ tfenv install latest
 tfenv use latest 
 
 # Databases
-brew cask install dbeaver-community # db viewer
+brew install  --cask dbeaver-community # db viewer
 brew install libpq                  # postgre command line
 brew link --force libpq
 # shellcheck disable=SC2016
 echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> $MAC_SETUP_PROFILE
 
 # SFTP
-brew cask install cyberduck
+brew install  --cask cyberduck
 
 # Docker
-brew cask install docker
+brew install --cask docker
 brew install bash-completion
 brew install docker-completion
 brew install docker-compose-completion
@@ -198,8 +192,7 @@ npm install -g @angular/cli
 mkdir -p ~/Documents/development
 
 ### For Dotnet
-
-brew cask install dotnet-sdk
+#brew install  --cask dotnet-sdk
 
 ### Need to set the visual studio code font to be 
 
@@ -208,35 +201,35 @@ brew cask install dotnet-sdk
 ### Download from https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete.ttf
 
 
-# For github Desktop
-brew cask install --appdir="/Applications" github
+## For github Desktop
+#brew  install --cask --appdir="/Applications" github
 
 
 # Install video conference, webex, microsoft team,zoom
-brew cask install webex-meetings
-brew cask install microsoft-teams 
-brew cask install zoom
+#brew install --cask webex-meetings
+brew  install --cask microsoft-teams
+brew install --cask zoom
 
 ## install vmfusion and virtual box
 ## Follow from https://gist.github.com/tomysmile/0618f1aa16341706940ed36b423b431c
-brew cask install vmware-fusion
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install vagrant-manager
+brew --cask install vmware-fusion
+brew --cask install virtualbox
+brew --cask install vagrant
+brew --cask install vagrant-manager
 
 
 ## For video editing
-brew cask uninstall camtasia
+#brew --cask uninstall camtasia
 
 ### For AZURE
-brew install azure-cli
+brew --cask azure-cli
 
-## For google drive back up 
-brew cask install google-backup-and-sync
+### For google drive back up
+#brew --cask install google-backup-and-sync
 
 
 ## Install android studio for mobile development
-brew cask install android-studio
+brew --cask install android-studio
 
 ## Flutter
 git clone https://github.com/flutter/flutter.git -b stable --depth 1
