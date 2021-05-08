@@ -99,7 +99,7 @@ brew install --cask   telegram
 
 # Dev tools
 brew install --cask   ngrok                                                                               # tunnel localhost over internet.
-brew install  --cask  postman                                                                             # Postman makes sending API requests simple.
+brew install --cask  postman                                                                             # Postman makes sending API requests simple.
 
 # IDE
 #brew install --cask  jetbrains-toolbox
@@ -117,7 +117,7 @@ nvm install node                                                                
 }>>$MAC_SETUP_PROFILE
 
 ## Java
-brew --cask install java
+brew install java
 #brew install maven # do not want to use maven
 brew install gradle
 
@@ -212,10 +212,10 @@ brew install --cask zoom
 
 ## install vmfusion and virtual box
 ## Follow from https://gist.github.com/tomysmile/0618f1aa16341706940ed36b423b431c
-brew --cask install vmware-fusion
-brew --cask install virtualbox
-brew --cask install vagrant
-brew --cask install vagrant-manager
+brew install --cask vmware-fusion
+brew install --cask virtualbox
+brew install --cask vagrant
+brew install --cask vagrant-manager
 
 
 ## For video editing
@@ -225,11 +225,11 @@ brew --cask install vagrant-manager
 brew --cask azure-cli
 
 ### For google drive back up
-#brew --cask install google-backup-and-sync
+#brew install --cask google-backup-and-sync
 
 
 ## Install android studio for mobile development
-brew --cask install android-studio
+brew install --cask android-studio
 
 ## Flutter
 git clone https://github.com/flutter/flutter.git -b stable --depth 1
