@@ -242,3 +242,8 @@ mkdir ~/src
 mv flutter ~/src
 
 echo 'export PATH="$PATH:${HOME}/src/flutter/bin"' >> $MAC_SETUP_PROFILE
+
+### For yarn
+brew install yarn
+### For vue3
+yarn global add @vue/cli
