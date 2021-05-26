@@ -111,24 +111,12 @@ mkdir ~/.nvm
 brew install nvm                                                                                     # choose your version of npm
 nvm install node                                                                                     # "node" is an alias for the latest version
 {
-  # echo "export NVM_DIR=\"$HOME/.nvm\""
-  # echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm'
-  # echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion'
+  echo "export NVM_DIR=\"$HOME/.nvm\""
+  echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm'
+  echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion'
 
   # this for vscode https://github.com/microsoft/vscode/issues/113869#issuecomment-780072904
-  function load-nvm {
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-    [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-  }
 
-  # nvm
-  if [[ "x${TERM_PROGRAM}" = "xvscode" ]]; then 
-    echo 'in vscode, nvm not work; use `load-nvm`';
-  else 
-    load-nvm
-  fi
 }>>$MAC_SETUP_PROFILE
 
 ## Java
