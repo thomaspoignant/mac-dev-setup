@@ -247,3 +247,18 @@ echo 'export PATH="$PATH:${HOME}/src/flutter/bin"' >> $MAC_SETUP_PROFILE
 brew install yarn
 ### For vue3
 yarn global add @vue/cli
+
+### Add patches for pyenv when using oh my zsh
+### Add pyenv executable to PATH and
+### enable shims by adding the following
+{
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+}>>"$HOME/.zprofile"
+
+{
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+}>>"$HOME/.profile"
