@@ -121,9 +121,10 @@ nvm install node                                                                
 
 ## Java
 
-# brew install java
+brew install java # this version 16 / 1.16 from openjdk
 # brew install maven # do not want to use maven
-# brew install gradle
+brew install gradle 
+brew install gradle-completion 
 
 ## golang
 {
