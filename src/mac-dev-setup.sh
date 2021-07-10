@@ -263,3 +263,12 @@ yarn global add @vue/cli
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init --path)"
 }>>"$HOME/.profile"
+
+
+## for gitdevops
+### more information: https://itnext.io/kubernetes-essential-tools-2021-def12e84c572
+### https://www.cncf.io/wp-content/uploads/2020/08/CNCF-Webinar-Navigating-the-Sea-of-Local-Clusters-.pdf
+### https://habd.as/post/kubernetes-macos-k3s-k3d-rancher/
+brew install --cask lens
+brew install krew
+brew install k3d helm kubectl
