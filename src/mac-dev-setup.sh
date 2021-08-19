@@ -172,6 +172,12 @@ brew install docker-machine-completion
 brew install awscli # Official command line
 # pip3 install saws    # A supercharged AWS command line interface (CLI).
 
+# Gcloud sdk
+brew install --cask google-cloud-sdk
+echo 'source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"' >> $MAC_SETUP_PROFILE
+echo 'source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"' >> $MAC_SETUP_PROFILE
+  
+    
 # reload profile files.
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
@@ -272,3 +278,9 @@ yarn global add @vue/cli
 brew install --cask lens
 brew install krew
 brew install k3d helm kubectl
+# for generate infra dependency graph
+brew install graphviz inframap
+
+
+brew install freetype imagemagick
+
