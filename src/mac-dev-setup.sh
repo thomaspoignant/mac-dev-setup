@@ -284,3 +284,5 @@ brew install graphviz inframap
 
 brew install freetype imagemagick
 
+# for drawio , software engineering diagram
+brew install --cask drawio
