@@ -237,6 +237,7 @@ brew --cask azure-cli
 
 ### For google drive back up
 #brew install --cask google-backup-and-sync
+brew install --cask google-drive
 
 
 ## Install android studio for mobile development
@@ -286,3 +287,7 @@ brew install freetype imagemagick
 
 # for drawio , software engineering diagram
 brew install --cask drawio
+
+# for ros
+brew install --cask xquartz
+brew install cmake
