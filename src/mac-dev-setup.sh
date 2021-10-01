@@ -281,6 +281,7 @@ brew install krew
 brew install k3d helm kubectl
 # for generate infra dependency graph
 brew install graphviz inframap
+brew install istio
 
 
 brew install freetype imagemagick
