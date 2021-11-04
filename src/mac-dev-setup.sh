@@ -84,6 +84,7 @@ brew install  --cask  font-hack-nerd-font
 ## Browser
 #brew cask install google-chrome
 #brew cask install brave-browser
+brew install --cask firefox
 
 # Music / Video
 brew install  --cask  spotify
