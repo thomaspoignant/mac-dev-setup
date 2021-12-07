@@ -293,3 +293,6 @@ brew install --cask drawio
 # for ros
 brew install --cask xquartz
 brew install cmake
+
+# For hardware development
+brew install --cask arduino
