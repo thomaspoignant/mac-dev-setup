@@ -296,3 +296,6 @@ brew install cmake
 
 # For hardware development
 brew install --cask arduino
+
+# note taking
+brew install --cask notion
