@@ -296,6 +296,8 @@ brew install cmake
 
 # For hardware development
 brew install --cask arduino
+# PDC design
+brew install --cask kicad
 
 # note taking
 brew install --cask notion
