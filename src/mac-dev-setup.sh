@@ -251,6 +251,8 @@ mkdir ~/src
 mv flutter ~/src
 
 echo 'export PATH="$PATH:${HOME}/src/flutter/bin"' >> $MAC_SETUP_PROFILE
+echo "alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'" >> $MAC_SETUP_PROFILE
+
 
 ### For yarn
 brew install yarn
