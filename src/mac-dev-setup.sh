@@ -92,7 +92,7 @@ brew install  --cask  vlc
 
 # Productivity
 brew install  --cask  kap                                                                                 # video screenshot
-brew install  --cask  rectangle                                                                           # manage windows
+# brew install  --cask  rectangle                                                                           # manage windows
 
 # Communication
 brew install  --cask  whatsapp
@@ -152,8 +152,14 @@ brew install tfenv
 tfenv install latest
 tfenv use latest 
 
+## Pulumi
+brew install pulumi/tap/pulumi
+# Subsequent updates can be installed in the usual way:
+## brew upgrade pulumi
+
 # Databases
-brew install  --cask dbeaver-community # db viewer
+# brew install  --cask dbeaver-community # db viewer, not using
+brew install --cask sequel-pro
 brew install libpq                  # postgre command line
 brew link --force libpq
 # shellcheck disable=SC2016
@@ -303,3 +309,6 @@ brew install --cask kicad
 
 # note taking
 brew install --cask notion
+
+# # logitech
+# brew install homebrew/cask-drivers/logitech-options
