@@ -146,6 +146,10 @@ brew install pyenv
 # shellcheck disable=SC2016
 echo 'eval "$(pyenv init -)"' >> $MAC_SETUP_PROFILE
 
+# Python virtualenv
+brew install pyenv-virtualenv
+echo 'if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi'  >> $MAC_SETUP_PROFILE
+
 
 ## terraform
 brew install tfenv
