@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# locale for ventura
+export LANG=en_US.UTF-8
+
 # Create a folder who contains downloaded things for the setup
 INSTALL_FOLDER=~/.macsetup
 mkdir -p $INSTALL_FOLDER
