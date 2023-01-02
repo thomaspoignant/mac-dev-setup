@@ -41,7 +41,7 @@ git secrets --install ~/.git-templates/git-secrets
 git config --global init.templateDir ~/.git-templates/git-secrets
 
 # ZSH
-brew install zsh zsh-completions                                                                      # Install zsh and zsh completions
+brew install zsh zsh-completions    # problem with mac default zsh vs brew install zsh                                                                  # Install zsh and zsh completions
 {
   echo "if type brew &>/dev/null; then"
   echo "  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH"
@@ -73,9 +73,9 @@ brew install tldr
 brew install coreutils
 brew install watch
 
-brew install z
-touch ~/.z
-echo '. /usr/local/etc/profile.d/z.sh' >> $MAC_SETUP_PROFILE
+# brew install z
+# touch ~/.z
+# echo '. /usr/local/etc/profile.d/z.sh' >> $MAC_SETUP_PROFILE
 
 brew install ctop
 
@@ -177,6 +177,7 @@ brew install  --cask cyberduck
 
 # Docker
 brew install --cask docker
+
 brew install bash-completion
 brew install docker-completion
 brew install docker-compose-completion
@@ -292,7 +293,7 @@ yarn global add @vue/cli
 ### more information: https://itnext.io/kubernetes-essential-tools-2021-def12e84c572
 ### https://www.cncf.io/wp-content/uploads/2020/08/CNCF-Webinar-Navigating-the-Sea-of-Local-Clusters-.pdf
 ### https://habd.as/post/kubernetes-macos-k3s-k3d-rancher/
-brew install --cask lens
+# brew install --cask lens
 brew install krew
 brew install k3d helm kubectl
 # for generate infra dependency graph
@@ -303,11 +304,11 @@ brew install istio
 brew install freetype imagemagick
 
 # for drawio , software engineering diagram
-brew install --cask drawio
+# brew install --cask drawio
 
 # for ros
-brew install --cask xquartz
-brew install cmake
+# brew install --cask xquartz
+# brew install cmake
 
 # For hardware development
 brew install --cask arduino
@@ -319,3 +320,9 @@ brew install --cask notion
 
 # # logitech
 # brew install homebrew/cask-drivers/logitech-options
+
+# Cloudfare
+brew install --cask cloudflare-warp
+
+# for dmg file 
+brew install --cask osirix-quicklook
